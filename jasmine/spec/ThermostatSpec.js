@@ -28,4 +28,26 @@ describe("Thermostat", function() {
     expect(thermostat.isPowersave).toBe(true);
   });
 
+  it("has a maximum temperature of 25 when powersave is on", function() {
+    thermostat.temperature = 25;
+    expect(function(){thermostat.up();}).toThrow("It's getting hot in here!")
+  });
+
+  it("can switch powersave off", function() {
+    thermostat.powersaveOff();
+    expect(thermostat.isPowersave).toBe(false);
+  });
+
+  it("can switch powersave off", function() {
+    thermostat.powersaveOff();
+    thermostat.powersaveOn();
+    expect(thermostat.isPowersave).toBe(true);
+  });
+
+  it("has a maximum temperature of 32 when powersave is off", function() {
+    thermostat.powersaveOff();
+    thermostat.temperature = 32;
+    expect(function(){thermostat.up();}).toThrow("It's getting hot in here!")
+  });
+
 });
