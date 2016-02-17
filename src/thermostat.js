@@ -45,3 +45,15 @@ Thermostat.prototype.resetTemp = function() {
   this.temperature = _START_TEMPERATURE;
   this.colour = _COLOUR[1]
 };
+
+Thermostat.prototype.checkTemp = function() {
+  return this.temperature
+};
+
+Thermostat.prototype.checkPSmode = function() {
+  if (this.powersaving = true) {
+    return true
+  } else {
+    return false
+  };
+};
