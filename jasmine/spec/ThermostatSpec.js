@@ -50,4 +50,24 @@ describe("Thermostat", function() {
     expect(function(){thermostat.up();}).toThrow("It's getting hot in here!")
   });
 
+  it("can be reset to 20 degrees", function() {
+    thermostat.reset();
+    expect(thermostat.temperature).toEqual(20)
+  });
+
+  it("should be green below 18 degrees", function(){
+    thermostat.temperature = 16;
+    expect(thermostat.colour()).toBe('green')
+  });
+
+  it("should be yellow above 18 and below 25 degrees", function(){
+    thermostat.temperature = 22;
+    expect(thermostat.colour()).toBe('yellow')
+  });
+
+  it("should be red above 25 degrees", function(){
+    thermostat.temperature = 26;
+    expect(thermostat.colour()).toBe('red')
+  });
+
 });

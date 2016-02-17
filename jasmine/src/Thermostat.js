@@ -39,3 +39,17 @@ function Thermostat() {
       return this.MAXTEMPOFF
     }
   };
+
+  Thermostat.prototype.reset = function() {
+    this.temperature = this.DEFAULTTEMPERATURE;
+  };
+
+  Thermostat.prototype.colour = function() {
+    if (this.temperature <= 18) {
+      return 'green'
+    } else if (this.temperature > 25){
+      return 'red'
+    } else {
+      return 'yellow'
+    }
+  };
