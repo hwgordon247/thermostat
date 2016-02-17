@@ -1,6 +1,8 @@
 function Thermostat() {
   this.DEFAULTTEMPERATURE = 20;
+  this.MINTEMP = 10;
   this.temperature = this.DEFAULTTEMPERATURE ;
+  this.isPowersave = true ;
 };
 
   Thermostat.prototype.up = function(){
@@ -8,5 +10,9 @@ function Thermostat() {
   };
 
   Thermostat.prototype.down = function(){
-    this.temperature --;
+    if (this.temperature === this.MINTEMP)
+      throw "Ice ice baby!";
+    else {
+      this.temperature --;
+    }
   };
