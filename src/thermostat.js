@@ -44,6 +44,7 @@ Thermostat.prototype.powersavingOn = function() {
 Thermostat.prototype.resetTemp = function() {
   this.temperature = _START_TEMPERATURE;
   this.colour = _COLOUR[1]
+  this.powersaving = true;
 };
 
 Thermostat.prototype.checkTemp = function() {

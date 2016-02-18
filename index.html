@@ -2,13 +2,39 @@
 <html>
   <head>
     <title> Thermostat </title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
   </head>
   <body style="background-color: pink;">
     <section>
       <h1 style="background-color: orange;text-align:center;font-family: Bodoni;color: red; font-size:40px;">WELCOME TO ANGRY THERMOSTAT.
       <h1 style="background-color: red;font-family: Arial;color: orange"> WHAT'S THAT? YOU'VE GOT SOMETHING TO SAY ABOUT MY COLOUR AND FONT SCHEME? GET THE FUCK OUT, YOU WORTHLESS SACK OF DISEASED BUM-GARMENTS. </h2>
       <h3 style="font-family: Impact;background-color: white;color: red"> PRESS THE FUCKING BUTTONS YOU MASSIVE SHIT-NOZZLE, ARE YOU STUPID??? </h3>
-      <h1 style="background-color: black;font-family: Bodoni;color: white"> IT'S THE FUCKING TEMPERATURE: </h1>
+      <section>
+        <h1 style="background-color: black;font-family: Bodoni;color: white">CHOOSE YOUR FUCKING CITY AND LEARN THE FUCKING TEMPERATURE THERE: </h1>
+        <h1><span id="current-temperature"></span></h1>
+          <select id="current-city">
+            <option value="montevideo">Montevideo</option>
+            <option value="asuncion">Asuncion</option>
+            <option value="fallujah">Fallujah</option>
+            <option value="port moresby">Port Moresby</option>
+            <option value="hell">Hell</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="managua">Managua</option>
+            <option value="bridgetown">Bridgetown</option>
+            <option value="skegness">Skegness</option>
+            <option value="fucking">Fucking</option>
+            <option value="timbuktu">Timbuktu</option>
+            <option value="slough">Slough</option>
+            <option value="helsinki">Helsinki</option>
+            <option value="ouagadougou">Ouagadougou</option>
+            <option value="ulanbator">Ulan Bator</option>
+            <option value="kathmandu">Kathmandu</option>
+            <option value="vladivostock">Vladivostock</option>
+            <option value="ouagadougou">Ouagadougou</option>
+          </select>
+      </section>
+      <h1><span id="current-temperature"><span></h1>
+      <h1 style="background-color: black;font-family: Bodoni;color: white"> IT'S THE FUCKING THERMOSTAT TEMPERATURE: </h1>
       <h1 id="temperature"></h2>
       <p>
         <button id="temp-up">+</button>
