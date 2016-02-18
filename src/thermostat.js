@@ -57,4 +57,14 @@ Thermostat.prototype.checkPSmode = function() {
   } else {
     return false
   };
+
+// Thermostat.prototype.energyUsage() {
+//   if (this.temperature < 15) {
+//     return 'low-usage'
+//   } else if (this.temperature > 15 & this.temperature < 25) {
+//     return 'medium-usage'
+//   } else {
+//     return 'high-usage'
+//   };
+
 };

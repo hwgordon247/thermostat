@@ -45,13 +45,6 @@ $(document).ready(function() {
 
   function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
-    // if(thermostat.colour === 'green') {
-    //   $('#temperature').css('color', 'green')
-    // } else if(thermostat.colour) === 'yellow') {
-    //   $('#temperature').css('color', 'yellow')
-    // } else {
-    //   $('#temperature').css('color', 'red')
-    // }
   };
 
 });

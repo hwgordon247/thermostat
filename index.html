@@ -3,14 +3,15 @@
   <head>
     <title> Thermostat </title>
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
   </head>
-  <body style="background-color: pink;">
-    <section>
-      <h1 style="background-color: orange;text-align:center;font-family: Bodoni;color: red; font-size:40px;">WELCOME TO ANGRY THERMOSTAT.
-      <h1 style="background-color: red;font-family: Arial;color: orange"> WHAT'S THAT? YOU'VE GOT SOMETHING TO SAY ABOUT MY COLOUR AND FONT SCHEME? GET THE FUCK OUT, YOU WORTHLESS SACK OF DISEASED BUM-GARMENTS. </h2>
-      <h3 style="font-family: Impact;background-color: white;color: red"> PRESS THE FUCKING BUTTONS YOU MASSIVE SHIT-NOZZLE, ARE YOU STUPID??? </h3>
+  <body>
+    <section id='twat'>
+      <h1 style="text-align:center;font-family: Open Sans;color: red; font-size:40px;">WELCOME TO ANGRY THERMOSTAT.
+      <h1 style="text-align:center;font-family: Open Sans;color: red"> SPONSORED BY PHIL MITCHELL </h2>
+      <h3 style="text-align:center;font-family: Open Sans;color: red"> Press the fucking buttons, you mug.</h3>
       <section>
-        <h1 style="background-color: black;font-family: Bodoni;color: white">CHOOSE YOUR FUCKING CITY AND LEARN THE FUCKING TEMPERATURE THERE: </h1>
+        <h1 style="font-family: Open Sans;color: orange">Check temperatures at cities from the drop down menu, you fucking mug: </h1>
         <h1><span id="current-temperature"></span></h1>
           <select id="current-city">
             <option value="montevideo">Montevideo</option>
@@ -33,17 +34,19 @@
             <option value="ouagadougou">Ouagadougou</option>
           </select>
       </section>
+      <section>
+        <form id=""
       <h1><span id="current-temperature"><span></h1>
-      <h1 style="background-color: black;font-family: Bodoni;color: white"> IT'S THE FUCKING THERMOSTAT TEMPERATURE: </h1>
+      <h1 style="font-family: Bodoni;color: white"> IT'S THE FUCKING THERMOSTAT TEMPERATURE: </h1>
       <h1 id="temperature"></h2>
       <p>
         <button id="temp-up">+</button>
         <button id="temp-down">-</button>
         <button id="temp-reset">reset</button>
-        <h1 style="background-color: black;font-family: Bodoni;color: white"> OH LOOK, THE FUCKING POWERSAVING OPTIONS: </h1>
+        <h1 style="font-family: Bodoni;color: white"> OH LOOK, THE FUCKING POWERSAVING OPTIONS: </h1>
         <button id="ps-on"> BE A STINGY, GREEN, UNWASHED HIPPY</button>
         <button id="ps-off"> POWER. UNLIMITED POWER</button>
-        <h4 style="background-color: cyan;font-family: Verdana;color: green">POWER SAVING MODE IS PROBABLY <span id="ps-status">ON</span>, BUT I REALLY DON'T FUCKING CARE.</h4>
+        <h4 style="font-family: Verdana;color: green">POWER SAVING MODE IS PROBABLY <span id="ps-status">ON</span>, BUT I REALLY DON'T FUCKING CARE.</h4>
         <br></br>
       </p>
     </section>
