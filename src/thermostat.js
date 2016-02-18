@@ -3,8 +3,8 @@ var _COLOUR = ['red', 'yellow', 'green']
 
 function Thermostat() {
   this.temperature = _START_TEMPERATURE;
-  this.maxTemperature = 25
-  this.minTemperature = 10
+  this.maxTemperature = 24
+  this.minTemperature = 11
   this.powersaving = true
   this.colour = _COLOUR[1]
 }
