@@ -1,4 +1,4 @@
-#twat {
+#stuff {
   position:absolute;
    top:50%;
    left:50%;
@@ -12,9 +12,13 @@
 }
 
 body {
-  background-image:url("https://pbs.twimg.com/media/BTBALdJIQAAqith.jpg:large");
+  background-image:url("https://metrouk2.files.wordpress.com/2015/02/ad_158583848.jpg");
   background-repeat:no-repeat;
   background-size:cover;
-  background-position: center center;
-  min-height:100%;
+}
+
+#temperature {
+  font-family: Open Sans;
+  color: orange;
+
 }
