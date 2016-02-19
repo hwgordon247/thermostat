@@ -1,0 +1,91 @@
+/*#header {
+  font-family: Arial;
+  background-color:blue;
+  height: 100px;
+}*/
+
+body {
+  font-family: Russo One;
+}
+
+#content {
+
+}
+
+#flag {
+  position:absolute;
+  left: 0;
+  z-index: -1;
+}
+
+#kim {
+   max-width:400px;
+   max-height:500px;
+   width: auto;
+   height: auto;
+   position:absolute;
+   left: 1000px;
+   top: 300px;
+}
+
+#temperature {
+  position:absolute;
+  left: 605px;
+  top: 380px;
+  font-size: 100px;
+}
+
+#title {
+  font-size: 100px;
+  position: absolute;
+  margin: 0;
+  left: 470px;
+}
+
+button {
+  font-size: 100px;
+  padding: 10px;
+  border: none;
+  background: none;
+  outline: 0;
+}
+
+button:active {
+  vertical-align: top;
+  padding: 8px 13px 6px;
+}
+
+#temp-up {
+  position: absolute;
+  top:850px;
+  left: 700px;
+}
+
+#temp-down {
+  position: absolute;
+  top:800px;
+  left: 500px;
+}
+
+#ps-on {
+  position: absolute;
+  top:450px;
+  left: 50px;
+}
+
+#ps-off {
+  position: absolute;
+  top:450px;
+  left: 270px;
+}
+
+#glasses {
+  position: absolute;
+  top:430px;
+  left: 1110px;
+  /*transform:translateY(200);*/
+}
+
+#glasses-show {
+  visibility: hidden;
+}
